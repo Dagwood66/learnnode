@@ -1,0 +1,16 @@
+{
+  "name": "science",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "env-cmd -e base,dev node app.js",
+    "build": "env-cmd -e base,build node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "config-lite": "^2.1.0"
+  }
+}
