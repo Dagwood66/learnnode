@@ -23,6 +23,10 @@ app.use(check.injectSessionUser);
 app.use(formidable({
     encoding: "utf-8"
 }));
+// 模板全局变量
+app.locals.blog = {
+    title: "博客"
+};
 
 router(app);
 

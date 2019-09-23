@@ -3,8 +3,8 @@ let UserModel = require("../models/User");
 let router = express.Router();
 
 // 注册页
-router.get("/", function (req, res) {
-    res.render("signup");
+router.get("/", function (request, response) {
+    response.render("signup");
 });
 // 注册接口
 router.post("/", function (request, response) {

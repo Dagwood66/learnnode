@@ -1,0 +1,21 @@
+<%- include('header') %>
+<% articleList.forEach(function(article, index){ %>
+    <div>
+        <div>
+            ---<%= index + 1 %>---------------------------------------------------
+        </div>
+        <div>
+            标题 ：<%= article.title %>
+        </div>
+        <div>
+            内容 ：<%= article.body %>
+        </div>
+        <div>
+            点击次数 ：<%= article.clicks %>
+        </div>
+        <div>
+            <a href="/posts?author=<%= article.user_id %>">进入详情</a>
+        </div>
+    </div>
+<% }) %>
+<%- include('footer') %>
